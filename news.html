@@ -1,0 +1,127 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+
+    <title>Shyrph | News</title>
+    <link rel="shortcut icon" type="image/png" href="image/favicon.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="banner">  
+
+            <a href="index.html" class="logo" title="Page d'accueil"><img src="image/shyrph2.png"></a>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="news.html" title="Nos actualités">NEWS</a></li>
+                    <li><a href="equipe.html" title="Présentation de l'équipe">EQUIPE</a></li>
+                    <li><a href="projets.html" title="Les futurs projets de l'équipe">PROJETS</a></li>
+                    <li><a href="contact.php" title="Entrer en contact avec nous">CONTACT</a></li>
+                    <li><a href="boutique.html" title="Découvrez nos maillots">BOUTIQUE</a></li>
+                </ul>
+            </div>
+
+            <a href="index.php" class="logo2" title="Page d'accueil"><img src="image/shyrph2.png"></a>
+                
+            <a class="menu-hamburger" onclick="lockScroll()">
+                <img src="image/menu-btn.png"> 
+            </a>       
+        </nav>
+    </header>
+
+    <div class="contenu">
+        <div class="titre">
+            <span>
+                Actualités
+            </span>
+
+            <div class="ligne2">
+            </div>
+        </div>
+
+        <div class="frame-twitch">
+            <div class="fenetre">
+                <iframe class="twitch" src="https://player.twitch.tv/?channel=shyrphtv&parent=shyrph.fr" frameborder="0" allowfullscreen="true" scrolling="no">
+                </iframe> <!-- changer www.example.com-->
+    
+                <img src="image/favicon.png">
+            </div>
+
+            <div class="text">
+                <span class="span1">Twitch</span>
+                <span class="span2">Retrouvez-nous en live sur la chaine ShyrphTV !</span>
+            </div>
+        </div>
+
+        <div class="frame-twitter">
+            <div class="position">
+                <div class="text2">
+                    <span class="span3">Twitter</span>
+                    <span class="span4">Retrouvez toutes nos actus sur notre Twitter ou directement sur notre site !</span>
+                </div>
+
+                <iframe class="twitter" src="twitter.html">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Shyrph est donc présente sur le jeu Fortnite, mais nous ne délaissons pas pour autant les autres jeux, qui arrivent même très vite ! De plus, nous mettons en place divers et nombreux projets qui vont vous plaire, afin d'une part démocratiser l'esport en apportant de nouvelles choses mais aussi pour récompenser notre communauté. Si vous voulez en savoir plus n'hésitez pas à aller dans <a href="pages/projet.html">Projets</a> pour en savoir plus ! Pour 2023, Shyrph compte bien gravir les échelons afin d'atteindre le haut niveau esportif grâce notamment à notre contenu, mais aussi par le recrutement des meilleurs membres professionnelles de l'esport que vous pouvez voir dans <a href="pages/equipe.html">Equipe</a>, ou encore en remédiant aux limites de l'esport.
+    <div class="banner3">
+
+        <h1 class="soutient">NOS PARTENAIRES NOUS SOUTIENNENT :</h1>
+
+        <div class="fond">
+            <img src="image/fond.jpg">
+        </div>
+    </div>-->
+
+    <footer>
+        <nav class="bas">
+
+            <div class="reseaux_hover">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img src="image/reseaux/instagram.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img src="image/reseaux/twitter.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img src="image/reseaux/discord.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img src="image/reseaux/youtube.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="reseaux">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img class="insta" src="image/reseaux/instagram_blanc.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img class="tw" src="image/reseaux/twitter_blanc.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img class="disc" src="image/reseaux/discord_blanc.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img class="yt" src="image/reseaux/youtube_blanc.png"></a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">© 2023 - Tous droits réservés - Designed by Univer's / Ver. 0.7</p>
+        </nav>
+    </footer>
+</body>
+
+<script>
+    const menuHamburger = document.querySelector(".menu-hamburger");
+    const navLinks = document.querySelector(".menu");
+
+    menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu');
+    });
+
+    function lockScroll() {
+        window.scrollTo(0, 0)
+        document.body.classList.toggle('lock-scroll');
+    };
+</script>
+
+</html>

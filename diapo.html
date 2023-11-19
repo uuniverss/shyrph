@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cours jQuery</title>
+        <meta charset="utf-8">
+      
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Titre principal</h1>
+        <button id="b1">hide() le titre</button>
+        <button id="b2">show() le titre</button>
+    </body>
+    <script>
+      $(document).ready(function(){     
+      //Dès qu'on clique sur #b1, on applique hide() au titre
+      $("#b1").click(function(){
+          $("h1").hide();
+      });
+
+      //Dès qu'on clique sur #b1, on applique show() au titre
+      $("#b2").click(function(){
+          $("h1").show();
+      });
+      });
+    </script>
+</html>
